@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Install libraries"
-          command: "pip install PyGithub github google-auth-oauthlib google-auth astrapy"
+          command: "pip install aiohttp==3.8.3 PyGithub github google-auth-oauthlib google-auth astrapy"
       - run:
           name: "Pull applications"
           command: "python tagnew.py"
