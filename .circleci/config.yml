@@ -15,6 +15,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Install libraries"
+          command: "pip install PyGithub github google-auth-oauthlib google-auth astrapy"
+      - run:
           name: "Pull applications"
           command: "python tagnew.py"
 
